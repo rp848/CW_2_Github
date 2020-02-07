@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet"href="style.css">
+            <script scr="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script src="https://unpkg.com/vue"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+            <link rel="manifest" href="js13kpwa.webmanifest"></link>
+            <script src="app.js" defer></script>
+
+    </head>
+
+    <body>
+        
+        <div id="coursesDispaly">
+            <h1> courses:</h1>
+          
+            <div v-for="course in courses" class="course">
+                <ul> 
+                <li v-for='(value, name) in course'>
+                    {{name}}: {{value}}
+                </li>
+
+
+                 </ul>  
+            </div>
+        </div>
+
+        <div id="createAccount">
+            <h1 style="text-align:center">Create An Account </h1>
+            <h2 id="regmessage"></h2>
+            <form>
+               
+                 <label for="email">Email</label>
+                 <input required type="email" name ="email" v-model="email"  >
+                 <label for="username">User Name</label>
+                 <input required type="text" name ="username" v-model="username">
+                 <label for="password">Password</label>
+                 <input required type="password" name ="password" v-model="password">
+                 <label for="usertype">usertype</label>
+                 <input required type="usertype" name ="usertype" v-model="usertype">
+                 <button v-on:click='createAccount'>submit</button>
+        
+            </form>
+            </div>
+
+            <div id="createcourse">
+                <h1 style="text-align:center">Createcourse</h1>
+                <h2 id="regmessage"></h2>
+                <form>
+                   
+                     <label for="topic">topic</label>
+                     <input required type="topic" name ="topic" v-model="topic"  >
+                     <label for="location">location</label>
+                     <input required type="location" name ="location" v-model="location">
+                     <label for="price">Price</label>
+                     <input required type="price" name ="price" v-model="price">
+                     <label for="provider">provider</label>
+                     <input required type="provider" name ="provider" v-model="provider">
+                     <label for="ranking">ranking</label>
+                     <input required type="ranking" name ="ranking" v-model="ranking">
+                     <button v-on:click='createcourse'>submit</button>
+            
+                </form>
+                </div>
+
+                <div id="updateCourse">
+                    <h1 style="text-align:center">updatecourse</h1>
+                    
+                    <form>
+                        <label >id</label>
+                        <input  type="text" name ="id" v-model="id">
+                         <label for="topic">topic</label>
+                         <input required type="topic" name ="topic" v-model="topic"  >
+                         <label for="location">location</label>
+                         <input required type="location" name ="location" v-model="location">
+                         <label for="price">Price</label>
+                         <input required type="price" name ="price" v-model="price">
+                         
+                         <button v-on:click='updateData'>submit</button>
+                
+                    </form>
+                    </div>
+
+                    <div id="deletecourses">
+                        <h1 style="text-align:center">deletecourse</h1>
+                        
+                        <form>
+                            <label >id</label>
+                            <input  type="text" name ="id" v-model="id">
+                            <button v-on:click='deletecourse'>DELETE</button>
+                        </form>
+                    </div>
+
+       
+    </div>
+    
+
+
+
+        <script>
+            fetch('http://localhost:3000/collections/lessons')
+            .then(function(response)
+            {
+             return response.text()
+               }).then(function(text)
+               {
+                   alert(text);
+                   testing.courses = JSON.parse(text);
+               }).catch(function(err){
+            console.log('Fetch problem: '+err.message);
+            });
+            
+            
+            var testing = new Vue({
+                            el: '#coursesDispaly',
+                            data: {
+            
+                                courses: [],
+             }})
+
+             var testing3 = new Vue({
+                el: '#createAccount',
+                data: {
+                    username:'',
+                  email:'',
+                  password:'',
+                  usertype:'',
+                                 
+},
+methods:{
+    createAccount:function () {
+   fetch(`/collections/users`, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+    'Content-Type': 'application/json',
+  },
+    
+    body: JSON.stringify({ email: this.email, username: this.username, password: this.password }) 
+  }).then(function (response){
+      return response.json()
+  }).then(function(data){
+  console.log('post rest', data)
+  })
+}
+}})
+
+var testing3 = new Vue({
+                el: '#createcourse',
+                data: {
+                    topic:'',
+                  location:'',
+                  price:'',
+                  provider:'',
+                  ranking:'',
+
+                                 
+},
+methods:{
+    createcourse:function () {
+   fetch(`/collections/lessons`, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+    'Content-Type': 'application/json',
+  },
+    
+    body: JSON.stringify({ topic: this.topic, location: this.location, price: this.price, provider: this.provider, ranking: this.ranking }) 
+  }).then(function (response){
+      return response.json()
+  }).then(function(data){
+  console.log('post rest', data)
+  })
+}
+}})
+
+var testing5 = new Vue({
+el: '#updateCourse',
+data: {
+id:'',
+topic:'',
+    location:'',
+    price: '',                
+},
+methods:{
+     updateData:function () {
+         var topicid = this.id
+         var pricee = this.price;
+         var pointNum = parseFloat(pricee);
+        
+         alert(pointNum  );
+  
+   fetch(`/collections/lessons/${topicid}`, {
+    method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+    'Content-Type': 'application/json',
+  },
+    
+    body: JSON.stringify({topic: this.topic, location: this.location,price: pricee }) 
+  }).then(function (response){
+      return response.json()
+  }).then(function(data){
+  console.log('post rest', data)
+  })
+}
+}})
+
+var testing6 = new Vue({
+el: '#deletecourses',
+data: {
+id:'',
+               
+},
+methods:{
+    deletecourse:function () {
+         var topicid = this.id
+         
+        
+         alert(  topicid );
+  
+   fetch(`/collections/lessons/${topicid}`, {
+    method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+    'Content-Type': 'application/json',
+  },
+    
+    body: JSON.stringify({id: this.id}) 
+  }).then(function (response){
+      return response.json()
+  }).then(function(data){
+  console.log('post rest', data)
+  })
+}
+}})
+
+
+
+
+ </script>
+
+
+
+
+  
+    
+</body>
+</html>
+      
