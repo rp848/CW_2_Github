@@ -1,0 +1,23 @@
+{ 
+    "name": "Afterschool",
+    "icons": [ 
+        { 
+            "src":"data/images/afterschool.png",
+            "sizes": "114x114", 
+            "type": "image/png" 
+        },
+
+
+        {  
+            "src":"data/images/logo.png",
+            "sizes": "114x114", 
+            "type": "image/png" 
+        }
+
+
+    ],
+
+    "start_url": "/app_cw2/index.html", 
+    "display": "fullscreen", 
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34" 
