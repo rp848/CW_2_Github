@@ -1,7 +1,7 @@
 var cacheName = 'cacheFiles-v1'; 
 
 var appShellFiles = [
-    '/app_cw2/',
+    '/CW_2_Github/',
     '/app_cw2/data/images/business.png',
     '/app_cw2/data/images/CS.png',
     '/app_cw2/data/images/dance.png',
