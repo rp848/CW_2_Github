@@ -5,7 +5,7 @@ if ('serviceWorker'in navigator)
 
  
 var button = document.getElementById("notifications");
-button.addEventListener('click', function(e) {
+button.addEventListener("click", function(e) {
 Notification.requestPermission().then(function(result) { 
 if(result === 'granted') { 
 randomNotification(); 
