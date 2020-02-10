@@ -1,6 +1,7 @@
 #coursesDispaly {
     background-color: lightblue;
     float: left;
+    border:2px solid Tomato;
   }
 
 #createAccount {
