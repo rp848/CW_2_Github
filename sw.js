@@ -14,6 +14,7 @@ var appShellFiles = [
     '/coursework2/data/images/science.png',
     '/coursework2/index.html',
     '/coursework2/server.js',
+    '/coursework2/sw.js',
     '/coursework2/app.js',
 
 ];
