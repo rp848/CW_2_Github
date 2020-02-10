@@ -1,21 +1,21 @@
 var cacheName = 'cacheFiles-v1'; 
 
 var appShellFiles = [
-    '/coursework2/',
-    '/coursework2/data/images/business.png',
-    '/coursework2/data/images/CS.png',
-    '/coursework2/data/images/dance.png',
-    '/coursework2/data/images/drama.png',
-    '/coursework2/data/images/english.png',
-    '/coursework2/data/images/maths.png',
-    '/coursework2/data/images/music.png',
-    '/coursework2/data/images/PE.png',
-    '/coursework2/data/images/pshe.png',
-    '/coursework2/data/images/science.png',
-    '/coursework2/index.html',
-    '/coursework2/server.js',
-    '/coursework2/sw.js',
-    '/coursework2/app.js',
+    '/app_cw2/',
+    '/app_cw2/data/images/business.png',
+    '/app_cw2/data/images/CS.png',
+    '/app_cw2/data/images/dance.png',
+    '/app_cw2/data/images/drama.png',
+    '/app_cw2/data/images/english.png',
+    '/app_cw2/data/images/maths.png',
+    '/app_cw2/data/images/music.png',
+    '/app_cw2/data/images/PE.png',
+    '/app_cw2/data/images/pshe.png',
+    '/app_cw2/data/images/science.png',
+    '/app_cw2/index.html',
+    '/app_cw2/server.js',
+    '/app_cw2/sw.js',
+    '/app_cw2/app.js',
 
 ];
 
