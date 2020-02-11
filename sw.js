@@ -1,27 +1,23 @@
-var cacheName ='cacheFiles33-v1'; 
+var cacheName = 'cacheFiless-v1'; 
 
 var appShellFiles = [
     '/app_cw2/',
+    '/app_cw2/data/images/business.png',
+    '/app_cw2/data/images/CS.png',
+    '/app_cw2/data/images/dance.png',
+    '/app_cw2/data/images/drama.png',
+    '/app_cw2/data/images/english.png',
+    '/app_cw2/data/images/maths.png',
+    '/app_cw2/data/images/music.png',
+    '/app_cw2/data/images/PE.png',
+    '/app_cw2/data/images/pshe.png',
+    '/app_cw2/data/images/science.png',
     '/app_cw2/index.html',
-    '/app_cw2/app.js',
-    '/app_cw2/style.css',
-    '/app_cw2/data/images/image2.jpg ',
-    '/app_cw2/data/images/image3.jpg ',
-    '/app_cw2/data/images/image4.jpg ',
-    '/app_cw2/data/images/image5.jpg ',
-    '/app_cw2/data/images/image6.jpg ',
-    '/app_cw2/data/images/image7.jpg ',
-    '/app_cw2/data/images/image8.jpg ',
-    '/app_cw2/data/images/image9.jpg ',
-    '/app_cw2/data/images/image10.jpg ',
-    '/app_cw2/data/images/blur.jpg ',
-    '/app_cw2/data/images/lego.jpg ',
-    '/app_cw2/data/images/logo.png ',
-    '/app_cw2/data/images/logo2.png ',
-   
-  
-];
+    '/app_cw2/server.js',
+    '/app_cw2/sw.js',
+    '/app_Cw2/app.js',
 
+];
 
 var contentToCache = [] = appShellFiles;
 
@@ -53,7 +49,7 @@ self.addEventListener('install',(e)=>{
 
 self.addEventListener('install',(e) => {
     e.waitUntil(
-    caches.open('cacheFiles-v2').then((cache) => {
+    caches.open('cacheFiles-v1').then((cache) => {
         return cache.addAll(contentToCache);
     }));
 });
@@ -69,3 +65,10 @@ self.addEventListener('activate',(e) => {
     ));
     }));
     });
+
+
+  
+
+
+
+
