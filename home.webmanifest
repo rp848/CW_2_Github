@@ -1,5 +1,5 @@
 { 
-    "name": "Afterschool_booking",
+    "name": "Afterschool",
     "icons": [ 
         { 
             "src":"data/images/icon.png",
@@ -21,4 +21,3 @@
     "display": "fullscreen", 
     "theme_color": "#B12A34",
     "background_color": "#B12A34" 
-}
