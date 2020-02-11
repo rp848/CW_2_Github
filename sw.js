@@ -1,5 +1,4 @@
-
-var cacheName ='cacheFiles-v1'; 
+var cacheName ='cacheFiles33-v1'; 
 
 var appShellFiles = [
     '/app_cw2/',
