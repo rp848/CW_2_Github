@@ -1,5 +1,5 @@
 if ('serviceWorker'in navigator)
-{navigator.serviceWorker.register('/app_cw2/sw.js');
+{navigator.serviceWorker.register('/coursework2/sw.js');
 };
 
 
@@ -18,7 +18,7 @@ function randomNotification(){
     var randomItem = Math.floor(Math.random()*courses.length);
     var notifTitle = courses[randomItem].topic;
     var notifBody='Created by '+courses[randomItem].provider+'.';
-    var notifImg='data/images/'+courses[randomItem].slug+'.png';
+    var notifImg='data/images/'+courses[randomItem].slug+'.jpg';
     var options = {body:notifBody,
         icon:notifImg
     }
