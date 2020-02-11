@@ -1,4 +1,4 @@
-var cacheName = 'cacheFiles-v1'; 
+var cacheName = 'js13kPWA-v1'; 
 
 var appShellFiles = [
     '/app_cw2/',
