@@ -1,5 +1,5 @@
 if ('serviceWorker'in navigator)
-{navigator.serviceWorker.register('/app_cw2/sw.js');
+{navigator.serviceWorker.register('/CW_2_Github/sw.js');
 };
 
 
