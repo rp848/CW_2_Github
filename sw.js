@@ -1,23 +1,28 @@
-var cacheName = 'cacheFiles-v1'; 
+
+var cacheName ='cacheFiles-v1'; 
 
 var appShellFiles = [
-    '/app_cw2/',
-    '/app_cw2/data/images/business.png',
-    '/app_cw2/data/images/CS.png',
-    '/app_cw2/data/images/dance.png',
-    '/app_cw2/data/images/drama.png',
-    '/app_cw2/data/images/english.png',
-    '/app_cw2/data/images/maths.png',
-    '/app_cw2/data/images/music.png',
-    '/app_cw2/data/images/PE.png',
-    '/app_cw2/data/images/pshe.png',
-    '/app_cw2/data/images/science.png',
-    '/app_cw2/index.html',
-    '/app_cw2/server.js',
-    '/app_cw2/sw.js',
-    '/app_Cw2/app.js',
-
+    '/coursework2Backend/',
+    '/coursework2Backend/index.html',
+    '/coursework2Backend/app.js',
+    '/coursework2Backend/home.css',
+    '/coursework2Backend/data/images/image2.jpg ',
+    '/coursework2Backend/data/images/image3.jpg ',
+    '/coursework2Backend/data/images/image4.jpg ',
+    '/coursework2Backend/data/images/image5.jpg ',
+    '/coursework2Backend/data/images/image6.jpg ',
+    '/coursework2Backend/data/images/image7.jpg ',
+    '/coursework2Backend/data/images/image8.jpg ',
+    '/coursework2Backend/data/images/image9.jpg ',
+    '/coursework2Backend/data/images/image10.jpg ',
+    '/coursework2Backend/data/images/blur.jpg ',
+    '/coursework2Backend/data/images/lego.jpg ',
+    '/coursework2Backend/data/images/logo.png ',
+    '/coursework2Backend/data/images/logo2.png ',
+   
+  
 ];
+
 
 var contentToCache = [] = appShellFiles;
 
@@ -49,7 +54,7 @@ self.addEventListener('install',(e)=>{
 
 self.addEventListener('install',(e) => {
     e.waitUntil(
-    caches.open('cacheFiles-v1').then((cache) => {
+    caches.open('cacheFiles-v2').then((cache) => {
         return cache.addAll(contentToCache);
     }));
 });
@@ -65,10 +70,3 @@ self.addEventListener('activate',(e) => {
     ));
     }));
     });
-
-
-  
-
-
-
-
