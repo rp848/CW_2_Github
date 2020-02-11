@@ -2,23 +2,10 @@
 var cacheName ='cacheFiles-v1'; 
 
 var appShellFiles = [
-    '/app_cw2/',
+
     '/app_cw2/index.html',
     '/app_cw2/app.js',
     '/app_cw2/style.css',
-    '/app_cw2/data/images/image2.jpg ',
-    '/app_cw2/data/images/image3.jpg ',
-    '/app_cw2/data/images/image4.jpg ',
-    '/app_cw2/data/images/image5.jpg ',
-    '/app_cw2/data/images/image6.jpg ',
-    '/app_cw2/data/images/image7.jpg ',
-    '/app_cw2/data/images/image8.jpg ',
-    '/app_cw2/data/images/image9.jpg ',
-    '/app_cw2/data/images/image10.jpg ',
-    '/app_cw2/data/images/blur.jpg ',
-    '/app_cw2/data/images/lego.jpg ',
-    '/app_cw2/data/images/logo.png ',
-    '/app_cw2/data/images/logo2.png ',
    
   
 ];
