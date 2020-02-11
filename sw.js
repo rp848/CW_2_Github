@@ -1,5 +1,5 @@
 
-var cacheName ='cacheFiles-v1'; 
+var cacheName ='app_cw2-v1'; 
 
 var appShellFiles = [
     '/app_cw2/',
@@ -51,7 +51,7 @@ self.addEventListener('install',(e)=>{
 
 self.addEventListener('install',(e) => {
     e.waitUntil(
-    caches.open('cacheFiles-v2').then((cache) => {
+    caches.open('app_cw2-v2').then((cache) => {
         return cache.addAll(contentToCache);
     }));
 });
