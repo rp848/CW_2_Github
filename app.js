@@ -18,7 +18,7 @@ function randomNotification(){
     var randomItem = Math.floor(Math.random()*courses.length);
     var notifTitle = courses[randomItem].topic;
     var notifBody='Created by '+courses[randomItem].provider+'.';
-    var notifImg='data/images/'+courses[randomItem].slug+'.jpg';
+    var notifImg='data/images/'+courses[randomItem].slug+'.png';
     var options = {body:notifBody,
         icon:notifImg
     }
