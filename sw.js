@@ -14,7 +14,7 @@ var appShellFiles = [
     '/app_cw2/data/images/science.png',
     '/app_cw2/index.html',
     '/app_cw2/server.js',
-    '/app_cw2/sw.js',
+    '/sw.js',
     '/app_cw2/app.js',
 
 ];
