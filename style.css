@@ -23,5 +23,21 @@ ul {
 #createAccount {
     background-color: lightblue;
     float: right;
+    border:2px solid Tomato;
+  }
+#createcourse {
+    background-color: lightblue;
+    float: right;
+    border:2px solid Tomato;
+  }
+#updateCourse {
+    background-color: lightblue;
+    float: right;
+    border:2px solid Tomato;
+  }
+#deletecourse {
+    background-color: lightblue;
+    float: right;
+    border:2px solid Tomato;
   }
  
