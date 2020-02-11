@@ -2,23 +2,20 @@
 var cacheName ='cacheFiles-v1'; 
 
 var appShellFiles = [
-    '/coursework2Backend/',
-    '/coursework2Backend/index.html',
-    '/coursework2Backend/app.js',
-    '/coursework2Backend/home.css',
-    '/coursework2Backend/data/images/image2.jpg ',
-    '/coursework2Backend/data/images/image3.jpg ',
-    '/coursework2Backend/data/images/image4.jpg ',
-    '/coursework2Backend/data/images/image5.jpg ',
-    '/coursework2Backend/data/images/image6.jpg ',
-    '/coursework2Backend/data/images/image7.jpg ',
-    '/coursework2Backend/data/images/image8.jpg ',
-    '/coursework2Backend/data/images/image9.jpg ',
-    '/coursework2Backend/data/images/image10.jpg ',
-    '/coursework2Backend/data/images/blur.jpg ',
-    '/coursework2Backend/data/images/lego.jpg ',
-    '/coursework2Backend/data/images/logo.png ',
-    '/coursework2Backend/data/images/logo2.png ',
+    '/app_cw2/',
+    '/app_cw2/index.html',
+    '/app_cw2/app.js',
+    '/app_cw2/style.css',
+    '/app_cw2/data/images/image2.jpg ',
+    '/app_cw2/data/images/image3.jpg ',
+    '/app_cw2/data/images/image4.jpg ',
+    '/app_cw2/data/images/image5.jpg ',
+    '/app_cw2/data/images/image6.jpg ',
+    '/app_cw2/data/images/image7.jpg ',
+    '/app_cw2/data/images/image8.jpg ',
+    '/app_cw2/data/images/image9.jpg ',
+    '/app_cw2/data/images/image10.jpg ',
+    '/app_cw2/data/images/blur.jpg ',
    
   
 ];
