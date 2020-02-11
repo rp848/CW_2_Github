@@ -1,11 +1,11 @@
 if ('serviceWorker'in navigator)
-{navigator.serviceWorker.register('/CW_2_Github/sw.js');
+{navigator.serviceWorker.register('/app_cw2/sw.js');
 };
 
 
  
 var button = document.getElementById("notifications");
-button.addEventListener("click", function(e) {
+button.addEventListener('click', function(e) {
 Notification.requestPermission().then(function(result) { 
 if(result === 'granted') { 
 randomNotification(); 
